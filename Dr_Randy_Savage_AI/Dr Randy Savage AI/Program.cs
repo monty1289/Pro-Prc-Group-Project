@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*AI Doctor
+ * Monty, Sam, Joseph, Tyler
+ * This program will ask the user questions continuously forever. The questions will repeat and evolve based on previous answers.
+ * The program will try to find inconsistencies in the users answers.
+ */
+using System;
 
 namespace Dr_Randy_Savage_AI
 {
