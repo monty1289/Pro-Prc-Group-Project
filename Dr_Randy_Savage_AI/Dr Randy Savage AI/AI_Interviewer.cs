@@ -7,7 +7,7 @@ using System;
 
 namespace Dr_Randy_Savage_AI
 {
-    class Program
+    class AI_Interviewer
     {
         static void Main(string[] args)
         {
