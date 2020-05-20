@@ -9,9 +9,20 @@ namespace Dr_Randy_Savage_AI
 {
     class AI_Interviewer
     {
-        public static void endless()
+        public static void Endless()
         {
             char play = 'y';
+            
+            while (play == 'y' || play == 'Y')
+            {
+                Interview();
+            }
+
+            Console.ReadLine();
+        }
+
+        public static void Interview()
+        {
             string temp;
             int count;
 
@@ -28,52 +39,41 @@ namespace Dr_Randy_Savage_AI
             question[5] = "How far can you throw a toddler or toddler sized object?";
             question[6] = "How many hits to the head have you had?";
 
-
-            while (play == 'y' || play == 'Y')
+            for (int i = 0; i < question.Length; i++)
             {
-                for (int i = 0; i < question.Length; i++)
+                Console.WriteLine(question[i]);
+                temp = Console.ReadLine();
+                answers[i] = temp;
+
+                /*add content to newquestions array
+                if (answers[1] == "yes")
                 {
-                    Console.WriteLine(question[0]);
+                    Console.WriteLine(newquestions[1]);
                     temp = Console.ReadLine();
-                    answers[0] = temp;
-
-
-
-                    Console.WriteLine(question[1]);
-                    temp = Console.ReadLine();
-                    answers[1] = temp;
-
-                    if (answers[1] == "yes")
-                    {
-                        Console.WriteLine(newquestions[1]);
-                        temp = Console.ReadLine();
-                        newanswers[1] = temp;
-                    }
-                    else
-                    {
-
-                    }
+                    newanswers[1] = temp;
+                }
+                else
+                {
 
                 }
+                */
+            }
 
-                for (int i = 0; i < question.Length; i++)
-                {
-                    Console.WriteLine(question[2]);
-                    temp = Console.ReadLine();
-                    answers[2] = temp;
-
-                }
-
+            for (int i = 0; i < newquestions.Length; i++)
+            {
+                Console.WriteLine(question[2]);
+                temp = Console.ReadLine();
+                answers[2] = temp;
 
             }
-            Console.ReadLine();
         }
+
         static void Main()
         {
             Console.WriteLine("Welcome to the Dr Randy Savage AI question Program");
             Console.WriteLine("press enter to contine");
             Console.ReadLine();
-            endless();
+            Endless();
         }
     }
 }
