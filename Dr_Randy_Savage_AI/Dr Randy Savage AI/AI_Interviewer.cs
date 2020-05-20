@@ -9,7 +9,7 @@ namespace Dr_Randy_Savage_AI
 {
     class AI_Interviewer
     {
-        static void Main(string[] args)
+        public static void endless()
         {
             char play = 'y';
             string temp;
@@ -26,15 +26,8 @@ namespace Dr_Randy_Savage_AI
             question[3] = "Do you have a strong punch";
             question[4] = "How many badgers could you fight?";
             question[5] = "How far can you throw a toddler or toddler sized object?";
-            question[6] = "where is the pain";
+            question[6] = "How many hits to the head have you had?";
 
-            newquestions[0] = "and your middle name?";
-            newquestions[1] = "why?";
-
-
-            Console.WriteLine("Welcome to the Dr Randy Savage AI question Program");
-            Console.WriteLine("press enter to contine");
-            Console.ReadLine();
 
             while (play == 'y' || play == 'Y')
             {
@@ -50,7 +43,7 @@ namespace Dr_Randy_Savage_AI
                     temp = Console.ReadLine();
                     answers[1] = temp;
 
-                    if(answers[1] == "yes")
+                    if (answers[1] == "yes")
                     {
                         Console.WriteLine(newquestions[1]);
                         temp = Console.ReadLine();
@@ -74,7 +67,13 @@ namespace Dr_Randy_Savage_AI
 
             }
             Console.ReadLine();
-        
+        }
+        static void Main()
+        {
+            Console.WriteLine("Welcome to the Dr Randy Savage AI question Program");
+            Console.WriteLine("press enter to contine");
+            Console.ReadLine();
+            endless();
         }
     }
 }
