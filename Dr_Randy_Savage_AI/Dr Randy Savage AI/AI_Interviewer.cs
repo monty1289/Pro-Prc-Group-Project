@@ -9,13 +9,18 @@ namespace Dr_Randy_Savage_AI
 {
     class AI_Interviewer
     {
+        public static void MakeQuestions()
+        {
+
+        }
         public static void Endless()
         {
             char play = 'y';
             
-            while (play == 'y' || play == 'Y')
+            while (play == 'y')
             {
                 Interview();
+                MakeQuestions();
             }
 
             Console.ReadLine();
