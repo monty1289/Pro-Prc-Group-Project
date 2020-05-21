@@ -11,7 +11,20 @@ namespace Dr_Randy_Savage_AI
     {
         public static void MakeQuestions()
         {
+            string temp;
+            string[] question = new string[20];
+            string[] answers = new string[20];
+            string[] newquestions = new string[20];
+            string[] newAnswers = new string[20];
 
+
+            for (int i = 0; i < question.Length; i++)
+            {
+                if (answer[i] != newAnswer[i])
+                {
+
+                }
+            }
         }
         public static void Endless()
         {
@@ -36,7 +49,7 @@ namespace Dr_Randy_Savage_AI
             string[] newquestions = new string[20];
             string[] newanswers = new string[20];
 
-            //questions for interview
+            //questions in an array for interview
             question[0] = "what is your full name?";
             question[1] = "Are you an active person?";
             question[2] = "Do you smoke";
