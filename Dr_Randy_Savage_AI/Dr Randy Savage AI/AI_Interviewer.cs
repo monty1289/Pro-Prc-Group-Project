@@ -36,6 +36,7 @@ namespace Dr_Randy_Savage_AI
             string[] newquestions = new string[20];
             string[] newanswers = new string[20];
 
+            //questions for interview
             question[0] = "what is your full name?";
             question[1] = "Are you an active person?";
             question[2] = "Do you smoke";
