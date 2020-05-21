@@ -31,10 +31,10 @@ namespace Dr_Randy_Savage_AI
             string temp;
             int count;
 
-            string[] question = new string[10];
-            string[] answers = new string[10];
-            string[] newquestions = new string[10];
-            string[] newanswers = new string[10];
+            string[] question = new string[20];
+            string[] answers = new string[20];
+            string[] newquestions = new string[20];
+            string[] newanswers = new string[20];
 
             question[0] = "what is your full name?";
             question[1] = "Are you an active person?";
@@ -43,6 +43,20 @@ namespace Dr_Randy_Savage_AI
             question[4] = "How many badgers could you fight?";
             question[5] = "How far can you throw a toddler or toddler sized object?";
             question[6] = "How many hits to the head have you had?";
+            question[7] = "what car do u drive?";
+            question[8] = "when did you lose your verginity?";
+            question[9] = "Are you experiencing pain?";
+            question[10] = "How many Bones have you broken?";
+            question[11] = "how much MMA fighting have you done?";
+            question[12] = "how much protein do you consume?";
+            question[13] = "do you take steroids?";
+            question[14] = "which spider man do you prefer?";
+            question[15] = "what type of car do you drive?";
+            question[16] = "when did you lose your virginity? ";
+            question[17] = "what religion do you follow?";
+            question[18] = "what type of Gym do you go too?";
+            question[19] = "what's your favorite drug?";
+
 
             for (int i = 0; i < question.Length; i++)
             {
