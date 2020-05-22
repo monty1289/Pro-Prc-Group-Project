@@ -11,7 +11,8 @@ namespace Dr_Randy_Savage_AI
     {
         public static void Makequestions(string[] questions, string[] answers, string[] newQuestions, string[] newAnswers)
         {
-             
+
+
             for (int i = 0; i < questions.Length; i++)
             {
                 if (answers[i] != newAnswers[i])
@@ -20,6 +21,7 @@ namespace Dr_Randy_Savage_AI
                     string tempA = answers[i];
                     string tempNA = newAnswers[i];
                     newQuestions[i] = ($"When I asked you {tempQ} you replied {tempA}, but when I asked you this question again you contradicted yourself by answering {tempNA}. Why do you lie?");
+
                 }
             }
         }
@@ -45,7 +47,7 @@ namespace Dr_Randy_Savage_AI
             string[] newquestions = new string[20];
             string[] newAnswers = new string[20];
 
-            //questions for interview
+            //questions in an array for interview
             questions[0] = "what is your full name?";
             questions[1] = "Are you an active person?";
             questions[2] = "Do you smoke";
@@ -66,6 +68,7 @@ namespace Dr_Randy_Savage_AI
             questions[17] = "what religion do you follow?";
             questions[18] = "what type of Gym do you go too?";
             questions[19] = "what's your favorite drug?";
+
 
 
             for (int i = 0; i < questions.Length; i++)
